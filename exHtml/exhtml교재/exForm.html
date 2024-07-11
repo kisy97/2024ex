@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>form filedset legend</h1>
+    <form action="./member.php" name="member" method="post">
+        <fieldset>
+            <legend>학생관리 폼</legend>
+            <div><label for="fname">Name</label><input type="text" name="fname" id="fname"></div>
+            <div><label for="fname">Hakb</label><input type="text" name="fhakb" id="fhakb"></div>
+            <div><label for="fname">Dept</label><input type="text" name="department" id="department"></div>
+            <input type="submit" value="제출하기">
+
+        </fieldset>
+    </form>
+    <br><br>
+
+    <h1>video</h1>
+    <h3>VIDEO 디자이호텔스</h3>
+    <video class="mainVideo" autoplay muted poster="../exbook/img/blog-post-img5.jpg">
+        <source src="../exbook/video/genesis-gatemain-g70-20my_15s.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <h1>audio</h1>
+    <h2>AUDIO MP3 음악</h2>
+    <audio controls autoplay loop muted>
+        <source src="../exbook/music/welcome.wav" type="audio/wav">
+    </audio>
+
+    <br><br>
+
+    <h1>canvas태그 audio</h1>
+
+    <canvas id="canvasBox">
+        캔버스를 지원하지 않는 브라우저 입니다.
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById('canvasBox')
+        var con = canvas.getContext('2d');
+        con.fillStyle = 'blue';
+        con.fillRect(20, 20, 100, 100);
+    </script>
+</body>
+
+</html>

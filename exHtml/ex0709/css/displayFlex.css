@@ -1,0 +1,31 @@
+.main {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.main div {
+    border: 1px solid rebeccapurple;
+    width: 50px;
+    height: 50px;
+}
+
+.main div:nth-child(1) {
+    background-color: red;
+}
+.main div:nth-child(2) {
+    background-color: orange;
+}
+.main div:nth-child(3) {
+    background-color: yellow;
+}
+.main div:nth-child(4) {
+    background-color: green;
+}
+.main div:nth-child(5) {
+    background-color: blue;
+}
+.main div:nth-child(6) {
+    background-color: indigo;
+}

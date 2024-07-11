@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>object 태그</h1>
+    <div>
+        <object data="../예제/img/blog-post-img3.jpg" width="300" height="200"></object>
+    </div>
+    <br><br>
+    <h1>object 웹 삽입</h1>
+    <div>
+        <object data="../ex0703/ex_label.html" width="100%" height="300"></object>
+    </div>
+    <br><br>
+    <h1>object 동영상 삽입</h1>
+    <div>
+        <object data="../예제/video/genesis-gatemain-g70-20my_15s.mp4" width="300" height="200" type=""></object>
+    </div>
+    <br><br>
+    <h1>object 소리 삽입</h1>
+    <div>
+        <object data="../예제/music/welcome.wav" width="300" height="auto" type=""></object>
+        <pre>웹 표준 권장사항 오디오를 삽입하려면 &lt;audio&gt;태그를  사용하는 것이 좋습니다.</pre>
+    </div>
+    <br><br>
+    <h1>audio 태그</h1>
+
+    <div>
+        <audio controls>
+            <!-- 컨트롤러사용 <audio controls> -->
+            <!-- 자동재생 <audio controls autoplay>  -->
+            <!-- 계속재생 <audio controls loop> -->
+            <!-- 음소거 <audio controls muted> -->
+            <!-- play여부설정 <audio controls preload="auto|metadata|none"> -->
+            <source src="horse.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+</body>
+
+</html>

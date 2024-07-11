@@ -1,0 +1,16 @@
+p {
+    background-color: orange;
+    width: 200px;
+}
+
+.p1 {
+    padding: 50px;
+    margin: 40px;
+}
+.p2{
+    padding: 10px 30px;
+    margin: 20px 60px;
+}
+.p3 {
+    padding: 5px 10px 15px 20px;
+}

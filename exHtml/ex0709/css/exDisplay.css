@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+#wrap {
+    width: 100%;
+    margin: 100px auto;
+}
+#wrap .img-wrap {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+
+    position: relative;
+}
+
+#wrap .img-wrap img {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    transition: all 1s;
+}
+#wrap .img-wrap img:hover {
+    transform: scale(1.5);
+}
+
+#wrap .img-wrap span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #c33;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}

@@ -1,0 +1,168 @@
+#prac1 ul {
+    list-style: none;
+}
+
+#prac1 ul li {
+    line-height: 30px;
+}
+
+#prac1 ul li:empty:after {
+    content: "빈칸 입니다.";
+    color: #c00;
+    background-color: #eee;
+}
+
+div {
+    text-align: center;
+}
+
+
+div p {
+    color: #333;
+    font-size: 14px;
+}
+
+#prac2 div p:first-child {
+    color: #c00;
+    font-size: 20px;
+    background-color: #eee;
+}
+
+#prac3 div p:first-of-type {
+    color: #c00;
+    font-size: 20px;
+    background-color: #eee;
+}
+
+
+#prac4 div h4::first-letter {
+    color: #c00;
+    font-size: 20px;
+    background-color: #eee;
+
+}
+
+#prac5 div::first-line {
+    color: #000;
+    font-size: 20px;
+    background-color: #ee0;
+}
+
+#prac6 form input[type="number"] {
+    width: 200px;
+    height: 42px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#prac6 form input:in-range {
+    color: #00c;
+    background-color: #f0f0f0;
+}
+
+#prac7 form input[type="email"] {
+    width: 500px;
+    height: 42px;
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0fe;
+
+}
+
+#prac7 form input:invalid {
+    color: #c00;
+    background-color: #f0f0f0;
+    border: 1px solid #c00;
+}
+
+#prac8 div p {
+    font-size: 16px;
+}
+
+#prac8 div p:lang(ko) {
+    color: #09a;
+    font-size: 30px;
+
+}
+
+div:nth-child(n+9) {
+    text-align: left;
+}
+
+div ul {
+    list-style: circle;
+}
+
+div ul li {
+    line-height: 30px;
+    margin-bottom: 1px;
+}
+
+#prac9 ul li:nth-child(1) {
+    color: #c00;
+    background-color: #eee;
+}
+
+
+#prac10 ul li:nth-child(3) {
+    color: #c00;
+    background-color: #eee;
+}
+
+
+#prac11 ul li:nth-child(odd) {
+    color: #c00;
+    background-color: #eee;
+}
+
+
+#prac12 ul li:nth-child(even) {
+    color: #c00;
+    background-color: #eee;
+}
+
+#prac13 ul li:nth-child(n+3) {
+    color: #c00;
+    background-color: #ee7;
+}
+
+#prac14 ul li:nth-child(3n) {
+    color: #c00;
+    background-color: #ee7;
+}
+
+#prac15 ul li:nth-child(2n+3) {
+    color: #c00;
+    background-color: #ee7;
+}
+
+#prac16 h2,
+#prac16 p {
+    line-height: 15px;
+    font-size: 15px;
+    margin-bottom: 1px;
+    color: #555;
+}
+
+#prac16 :not(p) {
+    color: #c00;
+    font-weight: 600;
+}
+
+
+#prac17 input[type="text"] {
+    width: 60%;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    color: #444;
+    font-size: 14px;
+}
+
+#prac17 input[type="text"]::placeholder {
+    color: #aaa;
+}
+

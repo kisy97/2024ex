@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>form 이름 연락처</h1>
+    <h2>FROM 연락처</h2>
+    <form name="phone_form" id="phone_from" method="post" action="/phone.php">
+        <label for="fname">이름:</label><br>
+        <input type="text" name="fname" id="fname" value="" placeholder="이름을 입력하세요"><br>
+        <label for="fphone">전화:</label><br>
+        <input type="text" name="fphone" id="fphone" value="" placeholder="전화번호를 입력하세요"><br><br>
+        <input type="submit" value="submit" class="submitBtn">
+        <input type="reset" value="reset" class="resetBtn">
+    </form>
+    <h1>form 아이디 비밀번호</h1>
+    <h2>FORM USER 아이디와 비밀번호?</h2>
+    <form action="/phone.php" name="user_form1" id="user_form1" method="post">
+        <label for="userid">Username:</label><br>
+        <input type="text" id="userid" name="userid"><br>
+        <label for="userpw">Password:</label>
+        <br>
+        <input type="password" id="userpw" name="userpw">
+        <br><br>
+        <input type="submit" value="submit" class="submitBtn1">
+        <input type="reset" value="reset" class="resetBtn1">
+
+    </form>
+    <h2>from 좋아하는 식사는?</h2>
+    <form action="/phone.php" name="phone_form2" id="phone_form2" method="post">
+        <label for="fname2">이름:</label>
+        <br>
+        <input type="text" name="fname2" id="fname2" value="" placeholder="이름을 입력하세요">
+        <br>
+        <label for="fphone2">전화:</label>
+        <br>
+        <input type="text" name="fphone2" id="fphone2" value="" placeholder="전화번호를 입력하세요">
+        <br><br>
+        <label for="select_food2">취미:</label>
+        <br>
+        <select name="select_food2" id="select_food2" size="1">
+            <option value="아침">아침</option>
+            <option value="브런치">브런치</option>
+            <option value="점심">점심</option>
+            <option value="저녁">저녁</option>
+            <option value="야식">야식</option>
+
+        </select>
+        <br><br>
+        <input type="submit" value="Submit" class="submitBtn2">
+        <input type="reset" value="reset" class="resetBtn2">
+    </form>
+    <h1>회원 관리 폼</h1>
+
+    <form class="gaip_form">
+        <ul>
+            <!-- 아이디 -->
+            <li>
+                <div>
+                    <label for="gaipId">아이디<i>*</i></label>
+                    <div class="fixedclear gaipIdWrap">
+                        <div class="gaipId_wrap">
+                            <input type="text" name="gaipId" id="gaipId" value="" placeholder="예 : marketkurly12">
+                        </div>
+
+                        <div class="gaipId_CheckBtn_wrap">
+                            <button data-role="none" class="gaipId_CheckBtn">중복확인</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 비멀번호 -->
+            <li>
+                <div>
+                    <label for="gaipPw">비밀번호<i>*</i></label>
+                    <div>
+                        <input type="password" name="gaipPw" id="gaipPw" value="" placeholder="비밀번호를 입력하세요">
+                    </div>
+                </div>
+            </li>
+            <!-- 비밀번호 확인 -->
+            <li>
+                <div>
+                    <label for="gaipPw2">비밀번호확인<i>*</i></label>
+                    <div>
+                        <input type="password" name="gaipPw2" id="gaipPw2" value="" placeholder="비밀번호를 한번 더 입력하세요">
+                    </div>
+                </div>
+            </li>
+            <!-- 이름 -->
+            <li>
+                <div>
+                    <label for="gaipName">이름<i>*</i></label>
+                    <div>
+                        <input type="text" name="gaipName" id="gaipName" value="" placeholder="이름을 입력해 주세요">
+                    </div>
+                </div>
+            </li>
+            <!-- 이메일 -->
+            <li>
+                <div>
+                    <label for="gaipEmail">이메일<i>*</i></label>
+                    <div>
+                        <input type="text" name="gaipEmail" id="gaipEmail" value=""
+                            placeholder="예: marketkurly@kurly.com">
+                    </div>
+                </div>
+            </li>
+            <!-- 휴대폰 -->
+            <li>
+                <div>
+                    <label for="gaipHp">휴대폰<i>*</i></label>
+                    <div>
+                        <input type="text" name="gaipHp" id="gaipHp" value="" part="숫자만 입력해주세요">
+                        <button class="gaipId_CheckBtn">인증번호 받기</button>
+                    </div>
+                </div>
+            </li>
+            <!-- 주소 -->
+             <li>
+                <div>
+                    <label for="gaidAddr">주소<i>*</i></label>
+                    
+                </div>
+             </li>
+        </ul>
+    </form>
+</body>
+
+</html>

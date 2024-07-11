@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+
+    text-align: center;
+}
+
+header> div {
+    color: white;
+    float: left;
+    width: 33.33%;
+    background-color: brown;
+    border: 3px solid red;
+    padding: 10px;
+}
+
+nav {
+    clear: both;
+}

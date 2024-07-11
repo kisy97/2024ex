@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid white;
+}
+th, td{
+    background-color: silver;
+    padding: 10px;
+    border-radius: 7px;
+}

@@ -1,0 +1,37 @@
+.e1 {
+    text-align: center;
+}
+.e2 {
+    text-align: left;
+}
+.e3 {
+    text-align: right;
+}
+.justify1 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+
+.ex1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+img.a{
+    vertical-align: baseline;
+}
+img.b {
+    vertical-align: text-top;
+}
+img.c {
+    vertical-align: text-bottom;
+}
+img.d{
+    vertical-align: sub;
+}
+img.e {
+    vertical-align: super;
+}

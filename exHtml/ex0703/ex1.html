@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+</head>
+
+<body>
+    <h2>HTML Forms</h2>
+
+    <form action="#">
+        <label for="fname">First name:</label>
+        <br>
+        <input type="text" name="fname" value="John"><br>
+        <label for="lname">Last name:</label>
+        <br>
+        <input type="text" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    <!-- 보통은 로그인 창 같은경우는 창 크기를 줄이지 br을 사용하지는 않는다. -->
+    <br><br>
+    <h2>Radio Bottons</h2>
+
+    <p>Choose your favorite Web language</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <br><br>
+
+    <h2>Checkboxes</h2>
+    <p>the <strong>input type="checkbox</strong> defineds a checkbox:</p>
+
+    <form action="">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h2>The select Element</h2>
+
+    <p>The select Element defines a adrop-down list:</p>
+
+    <form action="#">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars" size="2" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <!-- 디폴트 값은 selected로 정할 수 있다 -->
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <br><br>
+
+    <!-- 텍스트상자 요소 -->
+    <h2>Textarea</h2>
+    <p>The textarea element defines a multi-line input field.</p>
+
+    <form action="#">
+        <textarea name="message" cols="30" rows="10">The cat was playing in the garden.</textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+
+    <h2>The button Element</h2>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <br><br>
+    <!-- 아웃풋 요소 -->
+
+    <h2>The output Element</h2>
+    <p>The output element represents the result of a calculation.</p>
+
+    <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" name="a" id="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+    <!-- 패스워드 인풋 -->
+    <h2>Password field</h2>
+
+    <p>The <strong>input type="password"</strong> defineds a password field:</p>
+
+    <form action="#">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+
+    <p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+    <br><br>
+    <!-- 날짜 인풋 -->
+    <h2>Date Field</h2>
+
+    <form action="#">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="localtime">LocalTime:</label>
+        <input type="datetime-local" name="localtime"><br><br>
+        <input type="submit" value="Submit">
+        <input type="image" src="./image/img_submit.gif" name="img_submit.gif">
+    </form>
+    <br><br>
+    <h1>File upload</h1>
+
+    <p>Show a file-select field which allows a file to be chosen for upload:</p>
+    <form action="#">
+        <label for="myfile">Select a file:</label>
+        <input type="file" name="myfile" id="myfile">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <!-- 숫자 인풋 -->
+    <h2>Number Field</h2>
+
+    <p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+
+    <p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+    <form action="#">
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <h1>The input disabled attribute</h1>
+
+    <p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
+
+    <form action="#">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+
+    <h1>The input placeholder attribute</h1>
+
+    <p>The placeholder attribute specifies a short hint that describes the expected value of an input field.</p>
+
+    <form action="#">
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-6789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

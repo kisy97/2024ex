@@ -1,0 +1,10 @@
+div, p {
+    background-color: #aca;
+}
+
+div p {
+    background-color: #c9c;
+}
+div > p {
+    background-color: rgb(148, 51, 51);
+}

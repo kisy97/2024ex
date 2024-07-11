@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+
+}
+li a {
+    /* a 태그는 글자에만 타겟이 잡힐 우려가 있어서 display block으로 영역을 준다 */
+    display: block;
+    width: 100px;
+
+    padding: 8px 16px;
+
+    background-color: #dddddd;
+    text-decoration: none;
+
+
+}
+li a:hover {
+    content: "";
+    color: white;
+    background-color: #555;
+}

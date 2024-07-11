@@ -1,0 +1,34 @@
+form {
+    text-align: center;
+}
+fieldset {
+    margin: 20px auto;
+    padding: 15px 40px 20px 40px;
+    display: inline-block;
+    border: 1px solid #29c;
+}
+
+legend {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    padding-right: 20px;
+    letter-spacing: 1px;
+}
+
+input:nth-of-type(4) {
+    margin-left: 20px;
+}
+input:default + label {
+    color: #333;
+}
+input:checked + label {
+    color: #02f;
+}
+
+#input3 input:enabled + label {
+    color: #0c0;
+}
+#input3 input:disabled + label {
+    color: #bbb;
+}
