@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    vertical-align: middle;
+}
+#wrap {
+    width: 1000px;
+}
+#wrap .section1 {
+    width: 100%;
+} 
+#wrap .section1 ul {
+    width: 100%;
+    list-style: none;
+}
+#wrap .section1 ul li {
+    width: 25%;
+    float: left;
+}
+#wrap .section1 ul li img {
+    width: 100%;
+}
