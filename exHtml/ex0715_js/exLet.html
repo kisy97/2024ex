@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수 선언
+        function logScope(){
+            // 함수안에서 localVar 변수가 생성 및 초기화
+            let localVar = 2;
+            // 함수안에서 값을 출력
+            console.log(localVar);
+
+            // let으로 선언된 지역(블록)변수는 {}닫히기 직전에 소멸
+        }
+        // 함수 Call
+        logScope();
+        console.log("밖에서~ " + localVar);
+    </script>
+</body>
+</html>

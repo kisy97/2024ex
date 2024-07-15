@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num01;
+        num01 = 5;
+        console.log(num01);
+
+        var mountain = '설악산';
+        console.log(mountain);
+
+        console.log(num01,mountain);
+
+         // 함수 선언
+         function logScopeVar(){
+            // 함수안에서 localVar 변수가 생성 및 초기화
+            var myVar2 = 22;
+            // 함수안에서 값을 출력
+            if(myVar2){
+                var myVar = "다른 값";
+                console.log("안에서~" + myVar);
+            }
+            console.log("Var밖에서~ " + myVar);
+            console.log("밖에서~ " + myVar2);
+
+        }
+        // 함수 Call
+        logScopeVar();
+        
+
+    </script>
+</body>
+</html>
