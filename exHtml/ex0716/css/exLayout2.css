@@ -1,0 +1,68 @@
+.flex-container {
+    display: flex;
+    background-color: dodgerblue;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.ex1 .flex-container>div {
+    padding: 20px;
+}
+
+.ex2 .flex-container {
+    flex-direction: column;
+}
+
+
+.ex3 .flex-container {
+    flex-direction: column-reverse;
+}
+
+
+
+.ex4 .flex-container {
+    flex-direction: row;
+}
+
+
+.ex5 .flex-container {
+    flex-direction: row-reverse;
+}
+
+.ex6 .flex-container {
+    flex-wrap: wrap;
+}
+
+.ex7 .flex-container {
+    flex-wrap: nowrap;
+}
+
+.ex8 .flex-container {
+    flex-wrap: wrap-reverse;
+}
+
+.ex9 .flex-container {
+    flex-wrap: row wrap;
+}
+.ex10 .flex-container {
+    justify-content: center;
+}
+
+.ex11 .flex-container {
+    justify-content: flex-start;
+}
+
+.ex12 .flex-container {
+    justify-content: flex-end;
+}
+
+.ex13 .flex-container {
+    justify-content: space-around;
+}
+

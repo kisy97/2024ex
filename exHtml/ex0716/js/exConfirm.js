@@ -1,0 +1,1 @@
+var answer = window.confirm('***고객님이 맞습니까?');
