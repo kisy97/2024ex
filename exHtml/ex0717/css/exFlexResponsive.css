@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+}
+#ef1 .flex-container {
+    flex-direction: row;
+}
+#ef2 .flex-container {
+    flex-wrap: wrap;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    #ef1 .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    #ef2 .flex-item-left, #ef2 .flex-item-right {
+        flex: 100%;
+    }
+}

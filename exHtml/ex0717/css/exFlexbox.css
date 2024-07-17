@@ -1,0 +1,52 @@
+.flex-container {
+    display: flex;
+    background-color: dodgerblue;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.box2 .flex-container {
+    height: 200px;
+    align-items: baseline;
+}
+.box3 .flex-container {
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: scroll;
+}
+#fw1 .flex-container {
+    align-content: space-between;
+}
+#fw2 .flex-container {
+    align-content: space-around;
+}
+#fw3 .flex-container {
+    align-content: stretch;
+}
+#fw4 .flex-container {
+    align-content: center;
+}
+#fw5 .flex-container {
+    align-content: flex-start;
+}
+#fw6 .flex-container {
+    align-content: flex-end;
+}
+
+.box4 .flex-container {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.box4 .flex-container > div {
+    color: white;
+    width: 100px;
+    height: 100px;
+}

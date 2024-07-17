@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 600px;
+
+    padding: 50px;
+    margin: 0 auto;
+    background-color: turquoise;
+}
+div {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+pre {
+    font-size: 25px;
+}
+
+p {
+    font-size: larger;
+    font-weight: 500;
+
+}
