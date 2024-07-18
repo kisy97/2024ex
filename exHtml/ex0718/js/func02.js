@@ -44,32 +44,32 @@ result3.innerHTML += all3 + '<br>';
 // 화살표 함수 let / const 변수명 = (매개변수) => { 실행문 }
 
 // 매개변수 없는 경우 let / const 변수명 = () => { 실행문 }
-const main1 = () => {
+const func1 = () => {
     result4.innerHTML += 'main1<br>';
 }
-main1();
+func1();
 // 매개변수 1개인 경우 let / const 변수명 = 매개변수 => { 실행문 }
 
-const main2 = a => {
+const func2 = a => {
     result4.innerHTML += a;
 }
-main2('welcome<br>');
+func2('welcome<br>');
 // 매개변수 여러개인 경우 let / const 변수명 = (매개변수,매개변수) => { 실행문 }
 
-const main3 = (a, b) => {
+const func3 = (a, b) => {
     result4.innerHTML += (a + b) + '<br>';
 }
-main3(3, 5);
+func3(3, 5);
 // 화살표함수 단축형
-const main4 = () => result4.innerHTML += 'main4<br>';
+const func4 = () => result4.innerHTML += 'func4<br>';
 
-main4();
+func4();
 
-const main5 = a => a * 2;
-result4.innerHTML += main5(5) + '<br>';
+const func5 = a => a * 2;
+result4.innerHTML += func5(5) + '<br>';
 
-const main6 = a => ({b:a});
-result4.innerHTML += main6(25) + '<br>';
+const func6 = a => ({b:a});
+result4.innerHTML += func6(25) + '<br>';
 
 
 
