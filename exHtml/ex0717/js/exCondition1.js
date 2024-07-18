@@ -66,3 +66,34 @@ for (let dan = 2;dan < 10; dan++) {
     }
 }
 result6.innerHTML = resultStr;
+resultStr = '';
+
+var numwhile = 10;
+
+while(numwhile > 0) {
+    resultStr += (numwhile + "<br>");
+    numwhile--;
+}
+result7.innerHTML = resultStr;
+
+resultStr = '';
+let numDo = -10;
+
+do {
+    resultStr += numDo + '<br>';
+    numDo--;
+} while(numDo > 0);
+result8.innerHTML = resultStr;
+
+resultStr = '';
+
+let numCnt;
+
+for (numCnt=1;numCnt <= 10; numCnt++) {
+    if(numCnt == 3) {
+        continue;
+    }
+    resultStr += numCnt + '<br>';
+}
+
+result9.innerHTML = resultStr;
