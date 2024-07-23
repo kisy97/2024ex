@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.wrap {
+    width: 1200px;
+    height: 650px;
+    display: flex;
+}
+
+/* 헤더 */
+header {
+    width: 200px;
+    height: 650px;
+    background-color: #b3d988;
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+    background-color: #00ff95;
+}
+
+.nav {
+    width: 200px;
+    height: 100px;
+    background-color: #2f7e5d;
+}
+
+/* 메인 */
+.main {
+    width: 800px;
+    height: 650px;
+    background-color: #888;
+}
+
+/* 슬라이드 */
+.slideContent {
+    height: 350px;
+    background-color: #1a8cff;
+}
+
+/* 공지사항 */
+.content {
+    height: 200px;
+    background-color: #0059b3;
+    display: flex;
+}
+
+.con1 {
+    width: 33.33%;
+    background-color: yellowgreen;
+}
+
+.con2 {
+    width: 33.33%;
+    background-color: pink;
+}
+
+.con3 {
+    width: 33.33%;
+    background-color: yellowgreen;
+}
+
+/* 푸터 */
+footer {
+    height: 100px;
+    background-color: #b3d9ff;
+    display: flex;
+    align-items: center;
+}
+
+.f1 {
+    width: 620px;
+    height: 50px;
+    background-color: lightgray;
+}
+.f_right{
+    width: 180px;
+    height: 100px;
+}
+
+.f2 {
+    height: 50%;
+    background-color: yellow;
+}
+
+.f3 {
+    height: 50%;
+    background-color: #deb4b4;
+}
