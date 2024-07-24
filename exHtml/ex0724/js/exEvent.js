@@ -1,0 +1,1 @@
+const BTN = document.querySelector('.cta>a');

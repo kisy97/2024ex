@@ -1,8 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    box-sizing: border-box;
     color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
 }
 
 header {
@@ -17,15 +30,7 @@ footer {
     background-color: #e6e600;
 }
 
-.inner {
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: red;
-}
+
 
 .logo {
     width: 200px;
@@ -37,25 +42,6 @@ footer {
     width: 800px;
     height: 100px;
     background-color: yellowgreen;
-}
-
-
-.f1 {
-    width: 20%;
-    height: 50px;
-    background-color: lightgray;
-}
-
-.f2 {
-    width: 60%;
-    height: 50px;
-    background-color: yellow;
-}
-
-.f3 {
-    width: 20%;
-    height: 50px;
-    background-color: lightgray;
 }
 
 
@@ -85,7 +71,52 @@ footer {
     width: 33.33%;
     background-color: pink;
 }
+
 .con3 {
     width: 33.33%;
     background-color: yellowgreen;
+}
+
+/* 푸터 */
+
+.inner {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background: rgb(253, 219, 187);
+}
+
+a.footerLogo {
+    width: 200px;
+    height: 40px;
+    font-size: 0px;
+    color: transparent;
+}
+a img {
+    width: 100px;
+}
+
+footer p {
+    width: 70%;
+    text-align: center;
+}
+
+.sns {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.sns li {
+    display: inline-block;
+    width: 24%;
+}
+.sns li img {
+    width: 100%;
 }
