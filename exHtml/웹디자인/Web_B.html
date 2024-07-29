@@ -11,15 +11,96 @@
     <header>
         <div class="inner">
             <div class="logo"></div>
-            <div class="nav"></div>
+            <div class="nav">
+                <ul>
+                    <li class="menu">
+                        <a href="#">메인메뉴</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">메인메뉴</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">메인메뉴</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">메인메뉴</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="#">서브메뉴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="main">
-        <div class="slideContent"></div>
+        <div class="slideContent">
+            <img src="./images/food.jpg" alt="food" width="1200" height="300px">
+            <img src="./images/city.jpg" alt="city" width="1200" height="300px">
+            <img src="./images/nature.jpg" alt="nature" width="1200" height="300px">
+            <img src="./images/sport.jpg" alt="sport" width="1200" height="300px">
+            <img src="./images/people.jpg" alt="people" width="1200" height="300px">
+        </div>
         <div class="content">
-            <div class="con1"></div>
-            <div class="con2"></div>
-            <div class="con3"></div>
+            <div class="tab">
+                <ul class="tabMenu">
+                    <li class="on"><a href="#">공지사항</a></li
+                    ><li><a href="#">갤러리</a></li>
+                </ul>
+                <div class="tabItem">
+                    <ul class="notice on">
+                        <li><a href="javascript:openPop();">제30회 정기출사 및 모임 안내</a><span>2020-03-30</span></li>
+                        <li><a href="#">동호회 1분기 모임 안내</a><span>2020-03-25</span></li>
+                        <li><a href="#">2020 복지박람회 참가 안내</a><span>2020-03-23</span></li>
+                        <li><a href="#">3월 동호회 모임 안내</a><span>2020-03-05</span></li>
+                    </ul>
+                    <ul class="gallery">
+                        <li><a href="#"><img src="./images/gallery1.jpg" alt="갤러리이미지1"></a></li>
+                        <li><a href="#"><img src="./images/gallery2.jpg" alt="갤러리이미지2"></a></li>
+                        <li><a href="#"><img src="./images/gallery3.jpg" alt="갤러리이미지3"></a></li>
+                    </ul>
+                </div>
+                <div class="contentpop">
+                    <h2>제30회 정기출사 및 모임 안내</h2>
+                    <hr>
+                    <p>
+                        울긋불긋 단풍 가득한 가을을 카메라에 담고자
+                        제 30회 정기출사 모임을 아래와 같이 갖고자합니다. <br>
+                        <br>
+                        <br>
+                        일시 : 2019년 11월 16이 토요일 아침 10시<br>
+                        장소 : 분당 중앙공원 정자<br>
+                        출사후 회식 장소 : 2시 서현역근처 까투리
+                    </p>
+                    <button class="exit" onclick="closePop()">닫기</button>
+                </div>
+            </div>
+            <div class="banner"><a href="#">
+                <h2>배너</h2><img src="./images/nature.jpg" alt="배너이미지">
+            </a></div>
+            <div class="link"><a href="#">
+                <h2>바로가기</h2><img src="./images/food.jpg" alt="링크이미지">
+            </a></div>
         </div>
     </div>
     <footer>
@@ -36,6 +117,7 @@
             </ul>
         </div>
     </footer>
-    
+    <script src="../JQuery.js"></script>
+    <script src="./js/webB.js"></script>
 </body>
 </html>

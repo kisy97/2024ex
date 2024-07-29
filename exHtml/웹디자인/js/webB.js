@@ -32,29 +32,15 @@ $('.slideContent').hover(function () {
 $('.tabMenu li').click(function () {
     var idx = $(this).index()
 
-    
-
     $('.tabItem >*').hide().removeClass('on');
     $('.tabItem >*').eq(idx).show().addClass('on');
 
     $('.tabMenu li').removeClass('on');
     $('.tabItem li').removeClass('on');
     $(this).addClass('on');
+
 });
-
-$(function () {
-    $('header nav >ul').hover(function () {
-        // over
-        $(this).find('.submenu').stop().slideDown(1000);
-
-    }, function () {
-        // out
-        $('.submenu').stop().slideUp(500);
-
-    }
-    );
-});
-
+// 탭메뉴
 function openPop() {
     $('.contentpop').show();
 }
@@ -62,3 +48,14 @@ function openPop() {
 function closePop() {
     $('.contentpop').hide();
 }
+// 메뉴바
+$(function () {
+    $('header .nav>ul>li').hover(function () {
+            // over
+            $(this).find('.submenu').stop().slideDown();
+        }, function () {
+            // out
+            $('.submenu').stop().slideUp();
+        }
+    );
+  });

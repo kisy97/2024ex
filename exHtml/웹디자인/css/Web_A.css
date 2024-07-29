@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fff;
     color: #333;
 }
 
@@ -52,11 +51,13 @@ header ul a {
     text-align: center;
     background-color: #7dce83;
     padding: 10px;
+    border: 1px solid #333;
 }
 
 .menu {
     position: relative;
     width: 25%;
+
 
 }
 
@@ -109,11 +110,20 @@ header ul a {
     background-color: #ffcccc;
     display: flex;
 }
+.tab {
+    width: 34%;
+}
+.tabMenu {
+    position: relative;
+    z-index: 10;
+}
 
 .tabMenu li {
     display: inline-block;
     font-size: 18px;
     font-weight: 600;
+    border: 1px solid #333;
+    border-bottom: none;
 }
 
 .tabMenu li a {
@@ -122,11 +132,19 @@ header ul a {
 }
 
 .tabMenu li.on a {
-    background-color: #6159d6;
+    background-color: #bac8ee;
+}
+.tabItem {
+    position: absolute;
+    width: inherit;
+    border: 1px solid #333;
+    transform: translateY(-1px);
+    z-index: 9;
+
 }
 
 .tabItem>* {
-    height: 154px;
+    height: 151px;
     padding: 10px;
 
 }
