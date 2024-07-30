@@ -51,14 +51,12 @@ header ul a {
     text-align: center;
     background-color: #7dce83;
     padding: 10px;
-    border: 1px solid #333;
+
 }
 
 .menu {
     position: relative;
     width: 25%;
-
-
 }
 
 .submenu {
