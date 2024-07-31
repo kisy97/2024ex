@@ -1,0 +1,25 @@
+
+ul{
+    /* 리스트 기호(점) 없애기 */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    /* 메뉴 타겟(클릭영역) 확보하기___start */
+    display: block;
+    width: 80px;
+    /*********************_end */
+
+    background-color: aqua;
+
+    padding: 8px 16px;
+    
+    /* 밑줄없애기 */
+    text-decoration: none;
+}
+li a:hover{
+    background-color: black;
+    color: white;
+}

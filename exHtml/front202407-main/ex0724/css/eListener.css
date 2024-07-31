@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(211, 237, 252);
+    text-align: center;
+}
+h2{
+    margin-bottom: 30px;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.split>div>button {
+    width: 250px;
+    height: 3em;
+    margin: 10px;
+    background-color: rgb(169, 232, 211);
+    color: rgb(26, 26, 121);
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.split>div>div {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    background-color: rgb(210, 245, 252);
+    color: rgb(4, 4, 81);
+    font-size: 1.3em;
+    font-weight: 200;
+
+}

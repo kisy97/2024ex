@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>input속성 accept</h1>
+    <form action="#">
+        이미지선택 :
+        <!-- 모든 jpg파일과 txt파일 가능 : accept=".jpg, .txt" -->
+        <!-- 모든 오디오파일 가능 : accept="audio/*" -->
+        <!-- 모든 비디오파일 가능 : accept="video/*" -->
+        <!-- 모든 이미지파일 가능 : accept="image/*" -->
+        <input type="file" name="img" accept="image/*">
+        <br><input type="submit">
+    </form>
+</body>
+
+</html>

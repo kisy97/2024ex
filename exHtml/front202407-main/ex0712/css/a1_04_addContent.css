@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background-color: bisque;
+}
+
+.slideContent {
+    height: 300px;
+    background-color: aqua;
+}
+
+/* 본문 ------------------------------------------- */
+.content {
+    height: 200px;
+    background-color: rgb(218, 218, 253);
+    display: flex;
+}
+
+/* tab */
+/* 탭메뉴 공지사항,갤러리 */
+.tabMenu li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tabMenu li a {
+    display: block;
+    padding: 10px;
+}
+
+.tabMenu li.on a {
+    background-color: rgb(122, 122, 200);
+}
+
+/* 탭메뉴 내용부분 */
+.tabItem>* {
+    height: 156px;
+    padding: 10px;
+}
+
+.tabItem>*.on {
+    background-color: azure;
+}
+
+/* notice 공지사항 내용 
+line-height: 2.2; 줄간격 250% 느낌*/
+.notice li {
+    display: flex;
+    line-height: 2.2;
+}
+/*  display: inline-block; 
+    inline요소처럼 사용하고, block속성처럼 
+    width,height,margin,padding 사용가능
+
+    white-space: nowrap;
+    글자넘침을 한줄에서 표현. 줄바꿈 안하게~ 
+
+    overflow: hidden;
+    영역밖으로 넘치는 글자 안보이게~
+
+    text-overflow: ellipsis;
+    글자넘침을 ...으로 표현 */
+.notice li a {
+    display: inline-block;
+    width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice li span {
+    margin-left: auto;
+}
+
+.notice li:hover {
+    text-decoration: underline;
+}
+
+/* 갤러리내용 */
+.gallery {
+    display: none;
+}
+
+.gallery li {
+    display: inline-block;
+    width: 32%;
+    margin-top: 8px;
+}
+
+.gallery a img {
+    width: 100%;
+}
+
+/* 배너 */
+.banner,
+.link {
+    position: relative;
+}
+
+.banner h2,
+.link h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+footer {
+    height: 100px;
+    background-color: blanchedalmond;
+}

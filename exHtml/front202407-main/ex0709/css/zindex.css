@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.black {
+    position: relative;
+    height: 100px;
+    margin: 30px;
+    border: 1px so black;
+    z-index: 1;
+}
+
+.gray {
+    position: absolute;
+    width: 70%;
+    height: 60px;
+    background-color: lightgray;
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+}
+
+.green {
+    position: absolute;
+    width: 35%;
+    height: 100px;
+    background-color: lightgreen;
+    left: 270px;
+    top: -20px;
+    z-index: 2;
+
+}

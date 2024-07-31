@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+ul>li {
+    float: left;
+    width: 33.33%;
+}

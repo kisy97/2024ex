@@ -1,0 +1,12 @@
+
+.bg{
+    padding-bottom:2000px;
+    background-color: aquamarine;
+    
+}
+div.sticky {
+    background-color: rgb(47, 168, 69);
+    position: sticky;
+    top: 0;
+    
+}

@@ -1,0 +1,10 @@
+.scroll{
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}

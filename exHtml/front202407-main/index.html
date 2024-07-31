@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종목별[호텔,영화,레스토랑] 예약사이트</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+
+                <a onClick="window.location.reload()">
+                    <img src="./images/home.png" alt="home"><br>
+                    <h2>Refresh Space~~!!!</h2>
+                </a>
+            </div>
+            <div class="top">상단</div>
+            <div class="admin">
+                <P class="login">로그인</P>
+                <div class="loginfrm">
+                    <form action="#">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit"><input type="reset">
+                    </form>
+                </div>
+                로그인&nbsp회원가입&nbsp;장바구니&nbsp;관리자
+            </div>
+        </header>
+        <nav><img src="./images/menu.png" alt="home">메뉴</nav>
+        <div class="basket">
+            <form action="#">
+                <textarea rows="4" cols="50">
+                    Enter text here...
+                    clone 및 push 테스트
+                    ~~할인률5%
+                ...이렇게 예약확인 및 결제</textarea>
+                <button type="submit">결제하기</button>
+            </form>
+        </div>
+        <section class="row">
+            <div class="column">
+                <!-- <H1>호텔</H1> -->
+                <form action="#">
+                    <fieldset>
+                        <legend>호텔예약화면</legend>
+                        <p>룸선택</p>
+                        <p><input type="radio" name="rometype" value="A1type"><label
+                                for="A1type">A1type_Only&nbsp;&#8361;120,000</label></p>
+                        <p><input type="radio" name="rometype" value="B1type"><label
+                                for="B1type">B1type_PrivateSPA&nbsp;&#8361;250,000</label></p>
+                        <p><input type="radio" name="rometype" value="C1type"><label
+                                for="C1type">C1type_PrivatePOOL&nbsp;&#8361;330,000</label></p>
+                        <hr>
+                        <p>숙박기간</p>
+                        <p><input type="date"> ~ <input type="date"></p>
+                        <hr>
+                        <p>숙박인원</p>
+                        <p><input type="number"></p>
+                        <hr>
+                        <br><input type="submit" value="입력(장바구니추가)"><input type="reset" value="초기화">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="column">
+                <!-- <H1>영화</H1> -->
+                <form action="#">
+                    <fieldset>
+                        <legend>영화예매화면</legend>
+                        <p>영화제목</p>
+                        <p><input type="radio" name="rometype" value="Incredibles"><label
+                                for="Incredibles">인크레더블</label></p>
+                        <p><input type="radio" name="rometype" value="InsideTwo"><label for="InsideTwo">인사이드2</label>
+                        </p>
+                        <p><input type="radio" name="rometype" value="무한도전"><label for="무한도전">무한도전</label></p>
+                        <hr>
+                        <p>상영일자 및 시간</p>
+                        <p><input type="checkbox" name="datetime1" value="Incredibles">
+                            <label for="Incredibles">7/10-11:00-인크레더블&nbsp;조조&#8361;8,000</label><br>
+                            <input type="checkbox" name="datetime1" value="Incredibles">
+                            <label for="Incredibles">7/10-15:00-인크레더블&nbsp;&#8361;12,000</label><br>
+                        </p>
+                        <hr>
+                        <!-- <p>상영인원</p>
+                        <p><input type="number"></p>
+                        <hr> -->
+                        <p>좌석예약</p>
+                        <p>
+                        <table style="width:100%">
+                            <tr>
+                                <th>A열</th>
+                                <th>B열</th>
+                                <th>C열</th>
+                                <th>D열</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">&nbsp;1</td>
+                                <td><input type="checkbox">&nbsp;1</td>
+                                <td><input type="checkbox">&nbsp;1</td>
+                                <td><input type="checkbox">&nbsp;1</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">&nbsp;2</td>
+                                <td><input type="checkbox">&nbsp;2</td>
+                                <td><input type="checkbox">&nbsp;2</td>
+                                <td><input type="checkbox">&nbsp;2</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">&nbsp;3</td>
+                                <td><input type="checkbox">&nbsp;3</td>
+                                <td><input type="checkbox">&nbsp;3</td>
+                                <td><input type="checkbox">&nbsp;3</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">&nbsp;4</td>
+                                <td><input type="checkbox">&nbsp;4</td>
+                                <td><input type="checkbox">&nbsp;4</td>
+                                <td><input type="checkbox">&nbsp;4</td>
+                            </tr>
+                        </table>
+                        </p>
+                        <hr>
+                        <br><input type="submit" value="입력(장바구니추가)"><input type="reset" value="초기화">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="column">
+                <!-- <H1>레스토랑</H1> -->
+                <form action="#">
+                    <fieldset>
+                        <legend>레스토랑예약화면</legend>
+                        <p>메뉴선택</p>
+                        <p><input type="checkbox" name="menu1" value="m1"><label for="m1">블랙카우스테이크&nbsp;&#8361;45,000</label></p>
+                        <p><input type="checkbox" name="menu2" value="m2"><label for="m2">바질게살스파케티&nbsp;&#8361;14,000</label></p>
+                        <p><input type="checkbox" name="menu3" value="m3"><label for="m3">오늘의 스프&nbsp;&#8361;8,000</label></p>
+                        <hr>
+                        <p>날짜 및 시간</p>
+                        <p><input type="datetime-local"></p>
+                        <hr>
+                        <p>식사인원</p>
+                        <p><input type="number"></p>
+                        <br><input type="submit" value="입력(장바구니추가)"><input type="reset" value="초기화">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footerLeft">좌측하단</div>
+            <div class="footerCenter">주소으ㅜ르우르으르우루으루으ㅜㄹㅇ
+                <a href="#" target="_blank" title="youtobe">유투브</a>
+                <a href="#" target="_blank" title="facebook">페이스북</a>
+                <a href="#" target="_blank" title="instagram">인스타그램</a>
+            </div>
+            <div class="footerRight">우측 패밀리사이트</div>
+
+
+        </footer>
+    </div>
+</body>
+
+</html>

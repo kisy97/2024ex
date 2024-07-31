@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background-color: bisque;
+}
+
+/*----- 메뉴추가 ---------------------start*/
+/* 서브메뉴 안보임: js로 처리함. */
+
+.slideContent {
+    height: 300px;
+    background-color: aqua;
+}
+
+header nav {
+    width: 600px;
+    margin: 58px 0 0 370px;
+}
+
+header nav>ul {
+    display: flex;
+}
+
+header ul a {
+    display: block;
+    text-align: center;
+    background: #7dce83;
+    padding: 10px;
+}
+
+.menu {
+    position: relative;
+    width: 25%;
+}
+
+.submenu {
+    /* 서브메뉴는 주메뉴를 기준위치로 함 */
+    position: absolute;
+    width: 100%;
+    /* 서브메뉴가 나타날때 요소의 최상단으로 올림 */
+    z-index: 998;
+    /* 서브메뉴는 기본 안보임 */
+    display: none;
+}
+
+.menu:hover>a {
+    color: red;
+    background-color: #7dce83;
+}
+
+.submenu li:hover a {
+    color: blueviolet;
+    background-color: azure;
+}
+
+/*----- 메뉴추가 -----end*/
+
+.content {
+    height: 200px;
+    background-color: rgb(218, 218, 253);
+}
+
+footer {
+    height: 100px;
+    background-color: blanchedalmond;
+}

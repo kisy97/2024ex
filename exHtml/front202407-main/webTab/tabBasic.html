@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭메뉴 기본</title>
+    <link rel="stylesheet" href="./css/tabBasic.css">
+    <!-- <style>
+        div{
+            font-weight: normal;
+            color: white;
+            cursor: pointer;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">logo&#128540;로고</div>
+            <div class="nav">nav메뉴</div>
+        </header>
+        <div class="slideContent">slideContent</div>
+        <div class="content">
+            <article class="notice">
+                <div class="tabs">
+                    <div id="tabNews" class="tab">공지사항</div>
+                    <div id="tabGallery" class="tab">갤러리</div>
+                </div>
+                <div id="box1" class="box">
+                    <ul>
+                        <li>
+                            <a href="javascript:openPop()">신메뉴 출시 [팝업] </a>
+                        </li>
+                        <li>2024-0725</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">예약 정보2를 확인바랍니다</a>
+                        </li>
+                        <li>2024-0725</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">예약 정보3를 확인바랍니다</a>
+                        </li>
+                        <li>2024-0725</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">예약 정보4를 확인바랍니다</a>
+                        </li>
+                        <li>2024-0725</li>
+                    </ul>
+                </div>
+                <div id="box2" class="box">
+                    <img src="../images/bg.jpg" alt="갤러리1" width="120px" height="120px">
+                    <img src="../images/bg.jpg" alt="갤러리2" width="120px" height="120px">
+                    <img src="../images/bg.jpg" alt="갤러리3" width="120px" height="120px">
+                </div>
+            </article>
+            <div class="winPopup">
+                <h1>신메뉴 출시</h1>
+                <hr>
+                <p>
+                    신메뉴 날치알 바질 리조또<br>
+                    핫소스를 뿌려드시면 더 맛있습니다.<br>
+                    옵션: 새우튀김<br>
+                    옵션: 라임소다<br>
+                    메뉴 판매시작일: 2024-08-01<br>
+                </p>
+                <button class="exit" onclick="closePop()">닫기</button>
+            </div>
+            <article class="partner">
+
+
+            </article>
+            <article class="links">
+                <div class="tab">바로가기</div>
+                <div class="box">
+                    <a href="#">바로가기1</a>
+                    <a href="#">바로가기2</a>
+                    <a href="#">바로가기3</a>
+                    <a href="#">바로가기4</a>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <div class="f1">로고</div>
+            <div class="f2">&copy;Copyright</div>
+            <div class="f3">SNS</div>
+        </footer>
+
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="./js/tabBasic.js"></script>
+</body>
+
+</html>

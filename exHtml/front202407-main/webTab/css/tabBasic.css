@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
+header {
+    height: 100px;
+    background-color: rgb(151, 233, 251);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+    border: 2px solid red;
+}
+
+.nav {
+    width: 800px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.slideContent {
+    height: 300px;
+    background-color: rgb(167, 197, 254);
+}
+
+/* ---컨텐트(공지사항,팝업창,갤러리,바로가기링크 --- */
+.content {
+    height: 200px;
+    background-color: papayawhip;
+
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+
+
+    /* 팝업메뉴를 위해서 */
+    position: relative;
+}
+
+.content .tabs {
+    display: flex;
+}
+
+.content .tab {
+    /* 탭모양 */
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 0;
+    border-left: 1px solid black;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 30px;
+    z-index: 980;
+    /* position: relative; */
+    background-color: rgb(208, 250, 245);
+}
+
+
+/* -----공지사항----- */
+.notice {
+    width: 33.33%;
+    height: 100%;
+    background-color: rgb(181, 240, 132);
+
+    position: relative;
+}
+
+/* .notice .tabs {
+    display: flex;
+    position: absolute;
+} */
+
+
+.notice .box {
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    /* 테두리 */
+    margin-top: -1px;
+    border: 1px solid green;
+    /* Box위쪽  */
+    padding-top: 10px;
+
+    /* 이미지 가운데 정렬 */
+    text-align: center;
+
+    background-color: rgb(228, 251, 209);
+}
+#box2{
+    display: none;
+}
+
+.notice ul {
+    padding-left: 20px;
+}
+
+.notice ul li {
+    height: 30px;
+    display: inline-block;
+}
+
+.notice ul li a {
+    line-height: 20px;
+}
+
+content .box img {
+    /* margin-top: 10px; */
+
+    cursor: pointer;
+}
+
+/* -----팝업창----- */
+.winPopup {
+
+    width: 400px;
+    height: 300px;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    /* js로 처리 show(500) */
+    transform: translate(-50%, -50%);
+
+    z-index: 999;
+    border: 1px solid rgb(75, 75, 90);
+    background-color: #fff;
+
+    display: none;
+}
+
+.winPopup p {
+    padding: 30px;
+}
+
+.exit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* -----갤러리----- */
+.partner {
+    width: 33.33%;
+    height: 100%;
+    background-color: rgb(181, 240, 132);
+}
+
+
+
+/* -----바로가기 링크----- */
+.links {
+    width: 33.33%;
+    height: 100%;
+    background-color: rgb(181, 240, 132);
+}
+
+.links a {
+    display: block;
+    width: 100%;
+    height: 33px;
+    background-color: rgb(228, 251, 209);
+}
+
+.links .box {
+    /* 이미지 가운데 정렬 */
+    text-align: center;
+    /* 테두리 */
+    margin-top: -1px;
+    border: 1px solid green;
+
+    background-color: rgb(228, 251, 209);
+}
+
+
+/*  */
+footer {
+    height: 100px;
+    background-color: bisque;
+
+    display: flex;
+}
+
+.f1 {
+    width: 20%;
+    background-color: gainsboro;
+}
+
+.f2 {
+    width: 60%;
+    background-color: gray;
+}
+
+.f3 {
+    width: 20%;
+    background-color: gainsboro;
+}

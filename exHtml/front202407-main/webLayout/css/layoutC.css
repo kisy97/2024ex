@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+}
+
+header {
+    width: 200px;
+    height: 650px;
+    background-color: rgb(247, 243, 179);
+}
+
+.main {
+    width: 800px;
+    height: 650px;
+    background-color: rgb(251, 245, 72);
+}
+
+.slideContent {
+    height: 350px;
+    background-color: aquamarine;
+}
+
+.content {
+    height: 200px;
+    background-color: aqua;
+}
+
+.footer {
+    height: 100px;
+    background-color: rgb(98, 209, 172);
+}

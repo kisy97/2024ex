@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 600px;
+    background-color: azure;
+}
+
+div {
+    border: 1px solid skyblue;
+    margin: 13px;
+    padding: 20px;
+}
+
+
+p {
+    font-size: 30px;
+    font-weight: 500;
+}

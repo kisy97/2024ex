@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .wrapper {
+    overflow: auto;
+} */
+
+#leftsidebar {
+    float: none;
+
+    border: 1px solid red;
+    padding: 10px;
+}
+
+@media screen and (min-width:480px) {
+    #leftsidebar {
+        float: left;
+    }
+}

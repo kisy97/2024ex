@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+}
+
+/******************************
+ 주석: 실행되지 않는부분
+    여기에 설명이나,
+    전달사항을 적어요~
+*******************************/
+h1 {
+    color: rgb(33, 78, 79);
+}
+
+p {
+    border: 2px solid yellowgreen;
+    color: rgb(249, 39, 7);
+}

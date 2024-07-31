@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.solid {
+            /* border-style: 실선모양 */
+            border-style: solid;
+            /* border-width: 선굵기 */
+            border-width: 2px;
+        }
+
+        p.solid2 {
+            border-style: solid;
+            /* border-width: 상하 좌우; */
+            border-width: 5px 10px;
+        }
+
+        p.solid4 {
+            border-style: solid;
+            /* border-width: 상 우측 하 좌측 */
+            border-width: 15px 5px 10px 1px;
+        }
+
+        p.dotted {
+            /* border-style: 점선모양 */
+            border-style: dotted;
+            border-width: 3px;
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>테두리 속성</h2>
+    <p class="solid"> A solid border</p>
+    <p class="solid2"> A solid2 border</p>
+    <p class="solid4"> A solid4 border</p>
+    <p class="dotted"> A dotted border</p>
+    <p class="dashed">A dashed border</p>
+</body>
+
+</html>

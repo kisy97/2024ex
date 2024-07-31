@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이밍 추가삭제, 인터벌 추가삭제</title>
+</head>
+
+<body>
+    <h2>setTimeout() 일정시간이 지나면 함수를 수행</h2>
+    <button id="btnTime" onclick="t = setTimeout(myFun, 3000);" style="font-size: 20px;">시간 함수 만들기</button>
+    <button id="clearBtnTime" onclick="clearTimeout(t)" style="font-size: 20px;">시간 함수 삭제</button>
+
+    <h2>3초 후에 시간 출력</h2>
+    <button onclick="setTimeout(myFun, 3000);" style="font-size: 20px;">3초 후에 시간 출력 만들기</button>
+
+    <h2>setInterval() 일정 시간 간격마다 함수를 수행</h2>
+    <div id="dat">일정시간마다 반복되는 시간 결과값 출력</div>
+    <button onclick="clearInterval(myInterval)">clearInterval() 인터벌 삭제</button>
+
+
+    <script src="./js/timing.js"></script>
+</body>
+
+</html>

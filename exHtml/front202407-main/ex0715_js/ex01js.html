@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    test
+
+    <!-- <h1>자바스크립트를 배웁시다</h1> -->
+    <script>
+        // 페이지에 노출O.
+        document.write("welcome ");
+        document.write("<h1>welcome</h1>")
+        document.write(2+3);
+
+        // 페이지에 노출이 안됨X.
+        // 개발자가 페이지에 가지고 있는 값을 확인하기 위해서 사용~
+        console.log(3+5);
+        console.log("3+5");
+
+        // 창띄우기 ------------------------------------------------start--
+        // 기본 알림창
+        alert("환영합니다");
+
+        // 사용자에게 확인 받기위한 알림창
+        var answerCon = confirm("12세 이상인가요?");
+
+        // 사용자에게 값을 받기위한 알림창 
+        var answer = prompt("나이를 입력하세요: ", "숫자로 입력해주세요");
+
+        // 창띄우기 -------------------------------------------------end--
+        
+        
+    </script>
+</body>
+</html>

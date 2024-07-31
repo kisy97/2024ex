@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ------------- 변수표현 ---------
+        // 변수 선언
+        var num01;
+
+        // 변수 초기화 및 값.
+        num01 = 5;
+
+        // 변수값 콘솔확인
+        console.log(num01);
+
+        // ------------- 변수표현 ---------
+
+        // ------------- 함수표현 ----------------
+
+        function logScopeVar() {
+            var myVar2 = 22;
+            
+            if(myVar2){
+                var myVar = "다른 값";
+                console.log("안에서~ " + myVar);
+            }
+            // 변수가 존재함
+            console.log("Var밖에서~ " + myVar);
+            console.log("밖에서~ " + myVar2);
+        }
+
+        logScopeVar();
+        
+
+    </script>
+</body>
+
+</html>

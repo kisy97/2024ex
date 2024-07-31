@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+    background-color: rgb(211, 254, 204);
+}
+
+/* div {
+    
+    
+} */
+/* 제어문 */
+pre{
+    font-size: 16px;
+    color: rgb(21, 99, 99);
+    margin-top: 20px;
+}
+/* 결과값 */
+p{
+    font-size: larger;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(33, 141, 130);
+}

@@ -1,0 +1,193 @@
+* {
+    /* 가운데정렬 */
+    margin: 0 auto;
+    padding: 0;
+    /* 요소의크기를 box크기로 정하는것 */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+
+    width: 1680px;
+    height: 830px;
+    background-color: rgb(241, 241, 241);
+}
+
+/*===== 헤더 =====*/
+header {
+    width: 100%;
+    height: 130px;
+
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+
+}
+
+header>div {
+    border: 1px solid green;
+}
+
+header>div.logo {
+    /* width: 20%; */
+    flex: 1;
+    cursor: pointer;
+
+
+}
+
+header>div.top {
+    /* width: 60%; */
+    flex: 2;
+    background-image: url(../images/bg.jpg);
+    opacity: .3;
+}
+
+header>div.admin {
+    /* width: 20%; */
+    flex: 1;
+}
+
+/* .loginfrm{
+    visibility: hidden;
+} */
+/* .login:hover{
+
+} */
+
+/*===== 메인메뉴 =====*/
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* top: 150px; */
+    height: 120px;
+}
+
+/*===== 본문 =====*/
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.basket {
+
+    width: 100px;
+    height: 100px;
+}
+
+section {
+    width: 100%;
+    top: 350px;
+    height: 500px;
+
+
+}
+
+/* section.row {
+    display: block;
+} */
+
+
+.column {
+    float: none;
+    /* display: block; */
+    width: auto;
+
+    
+
+    /* display: inline-block; */
+    /* -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; */
+    padding: 10px;
+    /* height: 1500px; */
+
+    /* Should be removed. Only for demonstration */
+    border: 1px solid green;
+}
+
+fieldset {
+    width: 530px;
+    padding: 10px;
+    background-color: #f1fcdb;
+}
+
+legend {
+    background-color: rgb(48, 105, 19);
+    color: white;
+    padding: 5px 10px;
+}
+
+fieldset>p {
+    padding: 2px;
+}
+
+input {
+    margin: 5px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}
+
+hr {
+    margin-bottom: 5px;
+}
+
+/*===== 푸터 =====*/
+footer {
+    clear: both;
+
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+}
+
+footer>div {
+    border: 1px solid green;
+}
+
+footer>div.footerLeft {
+    flex: 1;
+}
+
+footer>div.footerCenter {
+    flex: 3;
+}
+
+footer>div.footerRight {
+    flex: 1;
+}
+
+@media screen and (min-width:480px) {
+    .column  {
+        float: left;
+        width: 33.33%;
+        background-color: orange;
+    }
+}
