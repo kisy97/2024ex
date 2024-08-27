@@ -45,4 +45,8 @@
   	<error-code>500</error-code>
   	<location>/02ImplicitObject/Exception.jsp</location>
   </error-page>
+  
+  <session-config>
+  	<session-timeout>20</session-timeout>
+  </session-config>
 </web-app>

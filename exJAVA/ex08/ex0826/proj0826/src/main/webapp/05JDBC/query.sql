@@ -30,9 +30,9 @@ create sequence seq_board_num
 	nomaxvalue
 	nocycle
 	nocache;
-
---	user권한 없음
---insert into member (id,pass,name) values ('kk1','1234','케이케이원');
---insert into BOARD (num,title,content, id, postdate, visitcount)
---	values (seq_board_num.nextval, '제목1입니다.', '내용1입니다.','kk1',sysdate,0);
-
+--user권한 없음
+insert into member (id,pass,name) values ('kk1','1234','케이케이원');
+insert into BOARD (num,title,content, id, postdate, visitcount)
+	values (seq_board_num.nextval, '제목1입니다.', '내용1입니다.','kk1',sysdate,0);
+	
+select * from MEMBER
