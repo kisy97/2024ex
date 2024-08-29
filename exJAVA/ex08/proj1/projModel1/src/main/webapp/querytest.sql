@@ -14,3 +14,12 @@ visitcount=visitcount+1
 where num=1;
 
 select * from board;
+
+select id,pass, rownum from member;
+
+select * from (
+	select Tb.*, rownum rNum from (
+		select * from board order by num DESC
+	) Tb
+)
+where rNum between 1 and 10;
