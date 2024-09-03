@@ -29,7 +29,6 @@
 			</tr>
 		</table>
 	</form>
-
 	<a href="./index.jsp">홈으로</a>
 	<hr>
 </section>

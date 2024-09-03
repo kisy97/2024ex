@@ -14,6 +14,4 @@ dao.insertMember(vo);
 
 
 response.sendRedirect("index.jsp");
-
-
 %>
