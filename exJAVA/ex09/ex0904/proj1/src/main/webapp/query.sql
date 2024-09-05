@@ -55,6 +55,16 @@ values(100007,'칠칠칠','010-9999-8888','추가~제주도 제주시 감나무�
 SELECT custno, custname, phone, address, joindate, grade, city
 from member_servlet where custno=100001;
 
+-- 회원 수정
+update member_servlet
+set custname='수정칠', phone='010-2626-6566', address='수정 제주도', joindate='20151211', grade='B', city='99'
+where custno=100007;
+
+--update member_servlet
+--set custname=?, phone=?, address=?, joindate=?, grade=?, city=?
+--where custno=?
+
+
 --회원삭제
 delete from member_servlet
 where custno = 100007;

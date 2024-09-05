@@ -37,7 +37,7 @@ ArrayList<MemberVO> memberList = (ArrayList<MemberVO>) request.getAttribute("mem
 				<td><%=dat.getJoindate()%></td>
 				<td><%=dat.getGrade()%></td>
 				<td><%=dat.getCity()%></td>
-				<td><a href="/memberDelete?custno=" <%=dat.getCustno()%>>[
+				<td><a href="/memberDelete?custno=<%=dat.getCustno()%>">[
 						X ]</a></td>
 			</tr>
 			<%
