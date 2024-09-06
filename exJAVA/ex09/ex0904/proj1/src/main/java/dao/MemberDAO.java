@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 import common.DBUtils;
+import vo.MemberMoneyVO;
 import vo.MemberVO;
 
 public class MemberDAO {
@@ -198,5 +199,43 @@ public class MemberDAO {
 		}
 		
 		return result;
+	}
+
+	// 회원 매출 조회
+	public ArrayList<MemberMoneyVO> getMemberMoney() {
+		
+		ArrayList<MemberMoneyVO> list = new ArrayList<MemberMoneyVO>();
+		
+		Connection conn = null;
+		PreparedStatement psmt = null;
+		ResultSet rs = null;
+		conn = DBUtils.getConnection();
+		String sql = "select A.custno, A.custname, decode(A.grade, 'A','VIP', 'B','일반', 'C','직원') grade, SUM(price) price\r\n"
+				+ "from member_servlet A, money_servlet B\r\n"
+				+ "where A.custno=B.custno\r\n"
+				+ "group by A.custno, A.custname, A.grade\r\n"
+				+ "order by price DESC";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			while (rs.next()) {
+				MemberMoneyVO vo = new MemberMoneyVO();
+				vo.setCustno(rs.getInt("custno"));
+				vo.setCustname(rs.getString("custname"));
+				vo.setGrade(rs.getString("grade"));
+				vo.setPrice(rs.getInt("price"));
+				list.add(vo);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(" 회원 매출 조회중 오류");
+			e.printStackTrace();
+		} finally {
+			DBUtils.close(conn, psmt, rs);
+		}
+		
+		return list;
 	}
 }
