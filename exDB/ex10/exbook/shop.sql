@@ -34,5 +34,11 @@ VALUES
 	('냉장고',5,'2019-02-01','대우',22);
 	
 SELECT * FROM producttbl;
-	
+
+SELECT memberName, memberAddress FROM membertbl;
+
+SELECT * FROM membertbl WHERE memberName='지운이';
+
+CREATE TABLE `my testTBL` (id INT);
+DROP TABLE `my testTBL`;
 
