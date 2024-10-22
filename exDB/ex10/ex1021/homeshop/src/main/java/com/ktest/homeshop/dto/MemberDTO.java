@@ -1,5 +1,7 @@
 package com.ktest.homeshop.dto;
 
+import java.sql.Date;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,5 +10,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class MemberDTO {
-
+	private int custno;
+	private String custname;
+	private String phone;
+	private String address;
+	private Date joindate;
+	private String grade;
+	private String city;
 }
