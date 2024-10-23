@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>게시판 내용 보기</title>
-    <style>
-        table, tr, td, th {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-        }
-    </style>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
 </head>
 <body>
-    <table>
+	<div class="main">
+		<div th:insert="~{./header :: header}"></div>
+		
+		<section>
+			<h1>회원 정보 상세보기</h1>
+		</section>
+		
+		<table>
         <tr>
             <th>회원번호</th>
             <td th:text="${member.custno}"></td>
@@ -45,9 +44,13 @@
             <td th:text="${member.city}"></td>
         </tr>
     </table>
-    <button onclick="listReq()">목록</button>
+	</div>
+    
+   <!--  <button onclick="listReq()">목록</button> -->
     <button onclick="updateReq()">수정</button>
     <button onclick="deleteReq()">삭제</button>
+    
+    <div th:insert="~{./footer :: footer}"></div>
 </body>
 <script th:inline="javascript">
     const listReq = () => {

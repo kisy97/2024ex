@@ -41,12 +41,12 @@ public class HomeController {
 		return "redirect:/list";
 	}
 	
-	@GetMapping("/list")
+	@GetMapping("/")
 	public String findAll(Model model) {
 		List<MemberDTO> memberDTOList = memberService.findAll();
 		model.addAttribute("memberList", memberDTOList);
 		System.out.println("memberList = " + memberDTOList);
-		return "list";
+		return "index";
 	}
 	
 	@GetMapping("/{custno}")
@@ -73,6 +73,11 @@ public class HomeController {
 		return "detail";
 	}
 	
+	@GetMapping("/delete/{custno}")
+	public String delete(@PathVariable("custno") Integer custno, Model model) {
+		memberService.delete(custno);
+		return "redirect:/list";
+	}
 	
 	
 	
