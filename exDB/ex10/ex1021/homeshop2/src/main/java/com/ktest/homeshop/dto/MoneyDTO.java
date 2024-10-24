@@ -1,20 +1,15 @@
 package com.ktest.homeshop.dto;
 
-import java.sql.Date;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor
-public class MemberDTO {
+public class MoneyDTO {
 	private Integer custno;
 	private String custname;
-	private String phone;
-	private String address;
-	private Date joindate;
 	private String grade;
-	private String city;
+	private Integer price;
 }

@@ -6,7 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
 import com.ktest.homeshop.dto.MemberDTO;
+import com.ktest.homeshop.dto.MoneyDTO;
 import com.ktest.homeshop.service.MemberService;
+import com.ktest.homeshop.service.MoneyService;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class HomeController {
 	
 	private final MemberService memberService;
+	private final MoneyService moneyService;
 	
 	@GetMapping("index")
 	public String home() {
@@ -78,6 +81,14 @@ public class HomeController {
 		memberService.delete(custno);
 		return "redirect:/";
 	}
+	
+	@GetMapping("/mlist")
+	public String moneyList(Model model) {
+		List<MoneyDTO> moneyDTOList = moneyService.findAll();
+		model.addAttribute("moneyList", moneyDTOList);
+		return "list_money";
+	}
+	
 	
 	
 	
